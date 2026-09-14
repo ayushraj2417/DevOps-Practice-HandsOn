@@ -14,6 +14,18 @@ b. Display only the first and third commandline arguments passed, on console.
 c. Display the zeroth commandline ie. argv[0] argument on console.
 d. Display how many commandline arguments passed, on console.
 e. Find the average of all numbers and store in avg_UserID. Display avg_UserID on console. 
+
+Question 16: 
+a. Pass first 2 letters of your name as first command line argument.
+b. Pass your employee number as second command line argument.
+c. Add the first and second commandline arguments and store in “result_UserID” variable.
+d. Display result_UserID on console. What will the output?
+
+Question 17:
+a. Pass first name of your name as first command line argument.
+b. Pass @wipro.com as second command line argument.
+c. Add the first and second commandline arguments and store in “result_UserID” variable.
+d. Display result_UserID on console. What will the output?
 '''
 
 # Solution for Question 14 and 15:
@@ -43,4 +55,10 @@ elif (len(user_input) - 1) == 5:
     print(f"Average of all numbers is: {avg_userID}")
 else:
     print("Please provide exactly 2 or 5 numbers as command line arguments.")
+
+# Solution for Question 16 and 17:
+import sys
+user_input = sys.argv
+result_UserID = user_input[1] + user_input[2]
+print(f"Result of adding first 2 letters of name and employee number is: {result_UserID}") 
 
